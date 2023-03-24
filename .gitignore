@@ -1,0 +1,4 @@
+# Ignore PSD, MP4, and PNG files
+*.psd
+*.mp4
+*.png

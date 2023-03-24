@@ -1,0 +1,37 @@
+
+The portfolio should have:
+
+ a frontpage with a header, 
+
+a section with a headline and a short introductory text (maximum 50 words),  
+
+a “list” of solved assignments, 
+
+a section with a headline and a short conclusive text about what you learned in the theme (maximum 50 words) and 
+
+a footer.
+
+
+
+The assignments are:
+
+13C.01.01 Fonts and UI components
+
+13C.01.02 Working with colors andanimations
+
+13C.02.01 Responsive design
+
+
+
+
+
+
+Document the assignments in separate pages with:
+
+mockups, 
+
+visual details, 
+
+links to working solutions and 
+
+a short text for each assignment motivating the solution (100 – 200 words). 
