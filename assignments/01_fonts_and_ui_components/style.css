@@ -158,12 +158,63 @@ header {
   padding: 5rem 2rem;
 }
 
+.card {
+  background-color: var(--color-light);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 1rem;
+}
+
+.card_image {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
 #card_container {
   display: grid;
   margin-top: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1rem;
   justify-items: center;
+}
+
+.card_name {
+  margin-block-start: 1rem;
+  margin-inline: 1rem;
+}
+.card_slogan {
+  margin-inline: 1rem;
+}
+
+.card_title {
+  margin-inline: 1rem;
+}
+.card_mail {
+  margin-inline: 1rem;
+  margin-block: 0.8rem;
+}
+
+.card_mail a {
+  color: var(--color-lighter);
+}
+
+.card input {
+  margin: 0.5rem 0.5rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 3px var(--color-dark);
+}
+
+.card_button_negative {
+  order: 2;
+  background-color: var(--color-dark);
+  color: var(--color-lighter);
 }
 
 #info {
