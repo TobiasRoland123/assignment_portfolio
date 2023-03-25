@@ -1,1 +1,324 @@
 /* Tip, copy paste from 13c.01.01 & 13c.01.02 to get fonts and colors up and running ... */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Color Properties */
+:root {
+  /* color variables */
+  --color-primary1: #f8f6f0;
+  --color-primary2: #eae7e0;
+  --color-secondary1: #2b2d42;
+  --color-secondary2: #494c64;
+  --color-accent1: #17b8ad;
+  /* you could add an accent color for CTAs and anchor tags ;-) */
+  --font-display: "Ubuntu", sans-serif;
+  --font-paragraph: "Lato", sans-serif;
+}
+
+/* Fonts */
+html {
+  /* font-size: 18px; */
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-darker);
+  font-family: var(--font-display);
+  margin: 3rem 0 1.38rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209rem;
+}
+
+h2 {
+  font-size: 2.369rem;
+}
+
+h3 {
+  font-size: 1.333rem;
+}
+
+p {
+  color: var(--color-secondary1);
+  font-family: var(--font-paragraph);
+}
+
+p.small {
+  font-size: 0.8rem;
+  opacity: 70%;
+}
+
+section {
+  padding: 0 1rem;
+}
+
+/* --------------nav bar ------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  background-color: var(--color-secondary1);
+  align-items: center;
+}
+nav a {
+  color: var(--color-primary1);
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+/* header */
+
+header {
+  background-image: url("images/banana.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 42% 10%;
+  padding: 1rem 1rem;
+}
+header h1 {
+  color: var(--color-accent1);
+}
+header button {
+  margin: 2rem auto;
+}
+
+button {
+  background-color: var(--color-accent1);
+  border: none;
+  padding: 0.7rem 0.5rem;
+  border-radius: 5px;
+  color: var(--color-primary1);
+}
+
+.header_graphics {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 43%;
+  background-image: url("images/biker_girl.jpg");
+}
+
+/* advantages */
+
+#advantages {
+  padding: 0rem 1rem;
+}
+.advantages_cards {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.advantages_card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary2);
+  border-radius: 7px;
+  overflow: hidden;
+  padding-block-end: 2rem;
+}
+
+.advantages_card_graphics {
+  background-image: url("images/3d_hand.jpg");
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1;
+  background-position: 37% 50%;
+}
+
+.advantages_card_text {
+  padding: 0 2rem;
+}
+
+.product_graphics {
+  background-image: url("images/drink_product.jpg");
+
+  background-image: url("images/drink_product.jpg");
+  height: 200px;
+  background-size: cover;
+}
+
+.highlight {
+  background: var(--color-primary2);
+  padding-block: 1rem 3rem;
+  margin-block: 3rem;
+}
+.highlight_small_cards {
+  display: flex;
+  gap: 1rem;
+}
+.highlight_small_cards > div {
+  background-color: var(--color-primary1);
+  padding: 1rem 1rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+.highlight_small_cards > div h3 {
+  margin-block-start: 1rem;
+}
+
+.team_graphics {
+  background-image: url("images/cras.jpg");
+  height: 150px;
+  background-size: 240%;
+  aspect-ratio: 3/4;
+  border-radius: 7px;
+  background-position: 49% 39%;
+  align-self: center;
+}
+.team_graphics.sapien {
+  background-image: url("images/sapien.jpg");
+  background-position: 51% 19%;
+  background-size: 160%;
+}
+
+#team article {
+  display: flex;
+  margin-block-end: 3rem;
+}
+
+.team_text h3 {
+  margin-block: 0rem 1rem;
+}
+
+.team_text ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  line-height: 1;
+  margin-block-end: 1rem;
+}
+
+.team_text a {
+  margin: 1rem 0rem;
+  color: var(--color-accent1);
+  text-decoration: none;
+}
+
+#contact_form {
+  margin-block: 2rem;
+  background: var(--color-primary2);
+  padding: 0.1rem 1rem;
+  border-radius: 7px;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.form_group input,
+.form_group textarea {
+  border: solid var(--color-accent1) 2px;
+  padding: 0.2rem 0;
+  border-radius: 4px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  background-color: var(--color-secondary2);
+}
+footer h3,
+footer h2 {
+  color: var(--color-primary1);
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer ul a {
+  color: var(--color-accent1);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 100svh;
+  }
+
+  .advantages_cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .advantages_card {
+    max-width: 300px;
+  }
+
+  .product_graphics {
+    height: 100%;
+    background-position-x: 42%;
+  }
+  #team .members {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .team_text ul {
+    flex-direction: column;
+  }
+
+  .graphics_and_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .product_text .first_child {
+    margin-block-start: 0rem;
+  }
+
+  .members article {
+    background-color: var(--color-primary2);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+  }
+
+  #contact {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 3rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  footer section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
