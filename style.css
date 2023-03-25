@@ -149,7 +149,11 @@ section {
   background-color: var(--color-accent1);
   color: var(--color-primary1);
   font-weight: 700;
-  /* width: 85%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--font-paragraph);
 }
 
 footer {
@@ -181,6 +185,20 @@ footer a {
 
 .socials li {
   width: 60px;
+}
+
+/* presentation sites */
+header {
+  padding: 0;
+}
+
+.presentation {
+  background-image: none;
+  height: auto;
+}
+
+.presentation img {
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
